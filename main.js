@@ -111,7 +111,6 @@ tl.from(".innerserve h2, .innerserve p",{
   scrollTrigger:{
     trigger:"#third",
     scroller:'body',
-    markers:true,
     scrub:1,
     start:"top 50%",
     end:"top 0%"
