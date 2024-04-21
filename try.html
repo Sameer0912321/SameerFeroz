@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+        }
+        .main{
+            overflow-y: scroll;
+            height: 100vh;
+            scroll-snap-type: mandatory y;
+        }
+        div{
+            height: 100vh;
+            scroll-snap-align: start;
+            width: 100%;
+            font-size: 4rem;
+
+        }
+        #first{
+            background-color: blueviolet;
+        }
+        #second{
+            background-color: rgb(255, 153, 36);
+        }
+        #fourth{
+            background-color: rgb(43, 226, 92);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div id="first">First</div>
+        <div id="second">Second</div>
+        <div id="fourth">Third</div>
+        </div>
+</body>
+</html>
