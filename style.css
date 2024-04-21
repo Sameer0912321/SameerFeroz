@@ -2,11 +2,7 @@ body{
     color: white !important;
     background-color: black;
     transition: 0.5s ease !important;
-    /* background-image: url(./pexels-mike-bird-114820.jpg);
-    background-position: center !important; */
     cursor: url(./icons8-dot-30.png), auto;
-    scroll-snap-type: proximity;
-    /* background-repeat: no-repeat; */
     position: relative !important;
     /* background-size: cover !important; */
     /* background-attachment: fixed !important; */
@@ -135,7 +131,7 @@ nav h4{
     margin: 0%;
     right: -100%;
     transition: 0.3 right;
-    background-color:red;
+    background-color:black;
     color: white;
     display: flex;
     flex-direction: column;
