@@ -30,7 +30,11 @@ $(document).ready(function(){
     })
 
 
+
 })
+setTimeout(()=>{
+  document.getElementById("outerloader").style.display="none"},2000);
+
 // const h1 = document.getElementById("h1");
 
 // var imgs = document.getElementById('langs')
