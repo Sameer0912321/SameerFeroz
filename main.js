@@ -19,15 +19,25 @@ $(document).ready(function(){
           left: e.pageX-10 
         })
       })
-    $("#contact").mouseenter(()=>{
-      $("#cursor").css({
-        border: '2px solid black'
+    $(".chan").mouseenter(()=>{
+      $('.chan').css({
+        cursor: 'url(./icons8-dot-30.png), auto'
       })
     }).mouseleave(()=>{
-      $("#cursor").css({
-        border: '2px solid red'
+      $(".chan").css({
+        cursor: 'url(./icons8-circle-24.png), auto'
       })
     })
+    $("footer").mouseenter(()=>{
+      $('footer').css({
+        cursor: 'url(./icons8-dot-30.png), auto'
+      })
+    }).mouseleave(()=>{
+      $("footer").css({
+        cursor: 'url(./icons8-circle-24.png), auto'
+      })
+    })
+    
 
 
 
@@ -50,27 +60,21 @@ tl.from('nav h4',{
   duration: 1,
   opacity:0,
 })
-tl.from("#hero>h1>div",{
-  x:300,
-  duration:1,
-  stagger:0.6,
-  opacity:0
-})
 tl.from("#social img",{
   x:-300,
   duration:1,
   stagger:0.6,
   opacity:0
 })
-// gsap.to("body",{
-//   backgroundColor:"white",
-//   scrollTrigger:{
-//     trigger:"#about",
-//     scrub:0.0001,
-//     start:"top 50%",
-//     end:"top -20%"
-//   }
-// })
+gsap.to("body",{
+  backgroundColor:"white",
+  scrollTrigger:{
+    trigger:"#about",
+    scrub:0.0001,
+    start:"top 100vh",
+    end:"top -20%"
+  }
+})
 // gsap.to("body",{
 //   backgroundColor:"black",
 //   color:"white",
