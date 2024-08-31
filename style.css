@@ -272,7 +272,7 @@ span{
 .box{
     width: 25vmax !important;
     height: 25vmax !important;
-    position: fixed;
+    position: absolute;
     z-index: -1;
     border-radius:100% 0% 100% 0% / 100% 12% 88% 0% ;
     background-image: linear-gradient(rgb(255, 0, 0),black);
@@ -350,16 +350,19 @@ span{
 }
 .box5{
     bottom: 4%;
-    right: -2%;
+    right: 4%;
     animation: 11s infinite rotate;
 
     transform: rotate(70deg);
 
 }
 @media(max-width:769px){
+    #hero{
+        padding: 0% !important;
+    }
     .box1{
-        top: 20%;
-        left: 20%;
+        top: 10%;
+        left: 10%;
         z-index: -1;
         transform: rotate(-40deg);
         animation: 10s infinite rotate;
@@ -381,7 +384,15 @@ span{
     
     }
     .box4{
-        top: 20%;
+        top: 10%;
+        right: 20%;
+        animation: 11s infinite rotate;
+    
+        transform: rotate(70deg);
+    
+    }
+    .box5{
+        top: 40%;
         right: 10%;
         animation: 11s infinite rotate;
     
