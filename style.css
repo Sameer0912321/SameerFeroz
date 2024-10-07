@@ -11,6 +11,7 @@ body{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
 }
 
+
 /* #overlay{
     width: 100%;
     height: 100vh;
@@ -24,6 +25,7 @@ body{
 nav{
     width: 100vw ;
     display: flex;
+    background-color: rgba(0, 0, 0, 0.877);
     height: fit-content;
     /* position: absolute; */
     justify-content: space-between;
@@ -31,7 +33,6 @@ nav{
     /* position: fixed; */
     z-index: 4;
     top: 0%;
-    
     left: 0%;
 
     align-items: center;
@@ -39,10 +40,10 @@ nav{
 }
 nav h4{
     z-index: 999;
-    left: 1%;
+    left: 2%;
     position: relative;
     top: 0%;
-    color: black;
+    color: white;
 }
 .outerlogo{
     width: 3em;
@@ -87,7 +88,7 @@ nav h4{
     transition: 0.3s;
     width: 0.5em;
     height: 0.5em;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     border-radius: 45px;
 }
 .outerinnernav2{
@@ -200,6 +201,9 @@ a{
     left: 0%;
     padding: 0% 2%;    
     height: 100vh;
+    background-image: url(./port_video-transformed.png);
+    background-size: cover;
+    z-index: -1;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -244,11 +248,11 @@ button:hover{
 } */
 /* h1's */
 h1{
-    font-size: 13vmax;
+    font-size: 12vmax;
     cursor: pointer;
     letter-spacing: 20px;
-    -webkit-text-stroke: 1px rgb(255, 255, 255);
-    color: black;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    color: white;
     position: relative;
     z-index: 1;
     margin-bottom: 1em;
@@ -256,7 +260,7 @@ h1{
 }
 h5{
     font-size: 1rem;
-    color: black ;
+    color: rgb(255, 255, 255) ;
     position: absolute;
     z-index: 4;
     text-align: center;
@@ -270,12 +274,12 @@ span{
 
 }
 .box{
-    width: 25vmax !important;
-    height: 25vmax !important;
+    width: 19vmax !important;
+    height: 19vmax !important;
     position: absolute;
     z-index: -1;
     border-radius:100% 0% 100% 0% / 100% 12% 88% 0% ;
-    background-image: linear-gradient(rgb(255, 0, 0),black);
+    background-image: linear-gradient(rgb(255, 255, 255),rgb(255, 0, 0));
 
 }
 @keyframes rotate{
@@ -430,7 +434,7 @@ section:nth-child(2){
 }
 @media(max-width:437px){
     h1{
-        font-size: 9vmax;
+        font-size: 7.5vmax;
         text-align: center;
         margin-bottom: 5em;
         letter-spacing: 5px;
@@ -621,7 +625,7 @@ textarea{
     height: fit-content;
     position: relative;
     z-index: 3;
-    background-color: black;
+    /* background-color: black; */
 }
 .outerserve{
     display: flex;
@@ -698,13 +702,13 @@ textarea{
         height: fit-content;
     }
     .innerserve:nth-child(1){
-        width: 100%;
-        height: 30vh;
+        width: 100% !important; 
+        height: 30vh !important;
 
     }
     .innerserve:nth-child(2){
-        height: 100vh;
-        width: 100%;
+        height: 100vh !important;
+        width: 100% !important;
         position: relative;
         left: 0%;
     }
