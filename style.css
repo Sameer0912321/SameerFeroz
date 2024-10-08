@@ -731,7 +731,7 @@ textarea{
 #cursor{
     width: 3em;
     border-radius: 45px;
-    border: 2px solid black;
+    border: 2px solid rgb(255, 0, 0);
     z-index: 2;
     position: relative;
     height: 3em;
